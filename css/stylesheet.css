@@ -1,0 +1,93 @@
+:root {
+	--yellow: rgb(242, 180, 80);
+	--brown: #382923;
+	--grey: #a9b2ac;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.navMenu {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 2rem;
+	position: fixed;
+	top: 5%;
+	right: 10%;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: var(--Yellow);
+}
+
+.navBtn {
+	position: fixed;
+	top: 3%;
+	right: 5%;
+	font-size: 2.5rem;
+	cursor: pointer;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: rgba(242, 180, 80, 0.9);
+	z-index: 3;
+}
+
+.nav__links {
+	list-style-type: none;
+}
+
+.nav__single-link {
+	display: block;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: brown;
+	font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+	transition: all 0.5s ease-in-out;
+}
+.nav__single-link:hover {
+	background: var(--brown);
+	color: rgb(242, 180, 80, 0.9);
+	padding-left: 1.5rem;
+}
+
+.nav__logo:hover {
+	background: var(--grey);
+}
+
+.nav {
+	width: 0;
+	overflow: hidden;
+	transition: all 0.5s linear;
+}
+.nav--show {
+	width: 10rem;
+}
+
+.row {
+	position: relative;
+	justify-content: center;
+	align-content: center;
+	align-self: center;
+	margin-top: 25%;
+}
+.card {
+	height: 150%;
+}
+
+#add_card {
+	position: fixed;
+	top: 30%;
+	right: 3%;
+}
+
+.container {
+	max-width: 80%;
+}

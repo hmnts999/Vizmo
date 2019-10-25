@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cards</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./css/stylesheet.css" />
+		<!-- font awesome -->
+		<script src="js/all.js"></script>
+	</head>
+
+	<body>
+		<!--header-->
+		<header class="header" id="header">
+			<div class="header-right">
+				<div class="navMenu navbar-light bg-light">
+					<a href="#" class="nav__menu-link">Nav1</a>
+					<a href="#" class="nav__menu-link">Nav2</a>
+					<a href="#" class="nav__menu-link">Nav3</a>
+					<a href="#" class="nav__menu-link">Nav4</a>
+				</div>
+				<div class="navBtn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+			<!-- nav-->
+			<nav class="nav">
+				<ul class="nav__links">
+					<li>
+						<a href="#header" class="nav__single-link">home</a>
+					</li>
+					<li>
+						<a href="#about" class="nav__single-link">about us</a>
+					</li>
+					<li>
+						<a href="#drink" class="nav__single-link">our projects</a>
+					</li>
+					<li>
+						<a href="#contact" class="nav__single-link">reach us</a>
+					</li>
+				</ul>
+			</nav>
+			<!--end of nav-->
+		</header>
+		<!--end of header-->
+
+		<!-- start of main content -->
+		<button id="add_card" onclick="addCard()">Add Card</button>
+		<!-- Cards -->
+		<div class="container">
+			<div class="row" id="card_container"></div>
+		</div>
+		<!-- end of Cards -->
+		<!-- end of main content -->
+		<script src="js/app.js"></script>
+	</body>
+</html>
